@@ -10,7 +10,7 @@ const Hero = () => {
         <article>
           <h1>Toby Chee</h1>
           <h2>A developer and a tester</h2>
-          <Link to="/projects">Projects</Link>
+          <Link to="/#projects">Projects</Link>
         </article>
       </Background>
     </Wrapper>
@@ -23,13 +23,6 @@ const Wrapper = styled.section`
     max-width: 800px;
     color: var(--clr-white);
     text-align: center;
-    /* h2 {
-      text-transform: uppercase;
-      font-weight: 500;
-      line-height: 1.25;
-      margin: 2rem 0 3rem 0;
-      letter-spacing: 3px;
-    } */
     h1 {
       font-weight: 400;
       font-family: "Caveat", cursive;

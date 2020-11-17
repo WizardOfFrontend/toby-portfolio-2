@@ -12,28 +12,30 @@ const Project = ({ id, title, description, features, github, website, image, sta
     <Wrapper >
       <div className="project">
         <article>
-          {
-            image &&
-            <Image fluid={image.childImageSharp.fluid} className="project-img" />
-          }
-          <div className="project-card">
-            <h4>{title}</h4>
-            <div className="description">Main Features</div>
-            <p><ReactMarkdown source={features} /></p>
-            <div className="project-footer">
-              <div className="project-stack">
-                {
-                  stack_item.map(item => {
-                    return <span key={item.id} className="tech">{item.title}</span>
-                  })
-                }
-              </div>
-              <div className="project-links">
-                <a href={github}><FaGithubSquare className="project-icon"/></a>
-                <a href={website}><FaShareSquare className="project-icon"/></a>
+          <a href={website} target="_blank">
+            {
+              image &&
+              <Image fluid={image.childImageSharp.fluid} className="project-img" />
+            }
+            <div className="project-card">
+              <h4>{title}</h4>
+              <div className="description">Main Features</div>
+              <p><ReactMarkdown source={features} /></p>
+              <div className="project-footer">
+                <div className="project-stack">
+                  {
+                    stack_item.map(item => {
+                      return <span key={item.id} className="tech">{item.title}</span>
+                    })
+                  }
+                </div>
+                <div className="project-links">
+                  <a href={github} target="_blank"><FaGithubSquare className="project-icon" /></a>
+                  <a href={website} target="_blank"><FaShareSquare className="project-icon" /></a>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </article>
       </div>
     </Wrapper>

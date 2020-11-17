@@ -131,6 +131,10 @@ p {
   h4 {
     line-height: 1;
   }
+  .contact-center {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 /*  global classes */
 
@@ -178,7 +182,7 @@ export const wrapRootElement = ({ element }) => {
   return (
     <>
       <GlobalStyle />
-      <GatsbyProvider>{element}</GatsbyProvider>          
+      <GatsbyProvider>{element}</GatsbyProvider>
     </>
   )
 }

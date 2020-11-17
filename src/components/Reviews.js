@@ -19,7 +19,7 @@ const Reviews = ({ customers, title }) => {
     }
   }, [index, customers])
 
-  return <Wrapper className="section">
+  return <Wrapper className="section" style={{paddingBottom:"0"}}>
     <Title title={title} />
     <div className="section-center">
       {customers.map((customer, customerIndex) => {
@@ -56,7 +56,7 @@ const Reviews = ({ customers, title }) => {
 }
 
 const Wrapper = styled.div`
-  padding-bottom: 0;
+  
   background: var(--clr-grey-10);
   .section-center {
     margin-top: 4rem;
@@ -121,6 +121,9 @@ const Wrapper = styled.div`
     }
     .next {
       right: 0;
+    }
+    article {
+      margin-bottom:0;
     }
     @media (min-width: 660px) {
       .icon{

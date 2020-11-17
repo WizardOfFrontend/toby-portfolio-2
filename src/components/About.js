@@ -43,7 +43,6 @@ const About = () => {
           {abouts.map((item, index) => {
             return (
               <button
-                // style={{color: `var(--clr-primary-5)`}}
                 onClick={() => setValue(index)}
                 key={item.strapiId}
                 className={`about-btn ${index === value && `active-btn`}`}

@@ -7,6 +7,7 @@ import styled from "styled-components"
 const Projects = ({projects,title}) => {
   return <Wrapper id="projects" className="section">
   <Title title={title} />
+  
   <div className="section-center projects-center">
     {
       projects.map(project=>{
