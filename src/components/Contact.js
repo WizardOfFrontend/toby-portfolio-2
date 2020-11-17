@@ -14,7 +14,7 @@ const Contact = () => {
         <div className="email">
           <i className="fas fa-envelope fa-2x"></i>
           <h3><MdEmail className="contact-icon" />Email</h3>
-          <p>WizardOfFrontend@outlook.com</p>
+          <p>WizardOfFrontend@gmail.com</p>
         </div>
         <div className="phone">
           <i className="fas fa-phone fa-2x"></i>
