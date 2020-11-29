@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Title from "./Title"
 import { graphql, useStaticQuery } from "gatsby"
 import ReactMarkdown from "react-markdown"
+import { FaTrophy } from "react-icons/fa";
 
 const query = graphql`
   {
@@ -71,12 +72,31 @@ const About = () => {
           }
         </article>
       </div>
+      <Title className='cert' title="Certification" />
+      <div className="cert-container">
+        <h4 className="cert"><FaTrophy className="cert-item" />PROGRAMMING IN HTML5 WITH JAVASCRIPT AND CSS3</h4>
+        <h4 className="cert"><FaTrophy className="cert-item" />MS CERTIFIED IT PROFESSIONAL: DATABASE DEVELOPER 2008</h4>
+
+      </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
   background: var(--clr-grey-10);
+
+  .cert-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+    .cert{
+      margin-bottom: 1rem;      
+    }
+    .cert-item{
+      margin-right: 1rem;
+      color: #ba5d2c;
+    }
+  }
 
 h3{
       margin-top: 1rem;
@@ -149,11 +169,8 @@ h4{
     font-weight: bold;
   }
 }
-  /* color: var(--clr-grey-5); */
+
 }
-
-
-
 
 .small-title,
 .date

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import Title from "./Title"
-import { MdPhoneAndroid, MdEmail } from "react-icons/Md";
+import { MdPhoneAndroid, MdEmail } from "react-icons/md";
 import { FaRegAddressCard } from "react-icons/fa";
 import './Contact.css';
 
